@@ -1,0 +1,146 @@
+*{
+   box-sizing: border-box;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./images/bg1.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: 'Poppins', sans-serif;
+    height: 98svh;
+    font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
+}
+
+.logo img{
+ position: absolute;
+  top: 2vh;
+  left: 1vw;
+  width: 261px;
+  height: 57px;
+  object-fit: cover;
+}
+
+.container{
+    height: 75vh;
+    min-width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1rem 1rem;
+    box-shadow: 0 5px 10px rgba(124, 124, 124, 0.1);
+    background: rgba( 255, 255, 255, 0.25 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 20px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 ); 
+    
+}
+
+.container h1{
+        font-size: 24px;
+        font-weight: 600;
+        text-align: center;
+        align-items: center;
+        color: #fff;
+        margin: 1.5rem 0;
+
+}
+
+.container form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem; 
+        color: #fff;
+        
+}
+
+.container form .input-field{
+    display: flex;
+    flex-direction: column; 
+    font-size: 1rem;
+}
+.container form .input-field label{
+    font-size: 13px;
+}
+    
+.container form .fields input, .container form .fields select{
+    padding: 0.8rem;
+    border-radius: 7px;
+    border: none;
+    box-shadow: none;
+    background: rgba( 255, 255, 255, 0.25 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+}
+
+.container form .fields input:focus{
+    border: none;
+    outline: none;
+}
+
+.container form .fields select{
+    color: #00000079;
+}
+
+.fields, .inputfield, input{
+    width: 100%;
+}
+
+.btncont{
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.btncont button{
+    width: 100%;
+    padding: 0.8rem 0;
+    border-radius: 7px;
+    background-color: #0C0F1B;
+    border: none;
+    box-shadow: none;
+    color: white;
+    letter-spacing: 4px;
+    font-weight: 500;
+}
+
+.btncont button:hover{
+    cursor: pointer;
+    transform: scale(0.99);
+}
+.left-img{
+    position: absolute;
+    left: 23vw;
+    bottom:-2vh;    
+    
+}
+.right-img{
+    position: absolute;
+    right: 23vw;
+    z-index: -1;
+    bottom: 0vh;
+}
